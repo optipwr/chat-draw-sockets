@@ -1,6 +1,6 @@
 
 // !!!!!!!!!WEBSOCKET SECTION!!!!!!!!!!
-var socketio = io.connect('http://127.0.0.1:8080');
+var socketio = io.connect('http://35.165.239.168:8080');
 // var socketio = io.connect('http://www.michaelirby.com/chat-draw');
 
 socketio.on('users', (socketUsers)=>{
