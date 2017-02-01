@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<body>
+
+	<div id="primary-wrapper">
+		<div id="chat-wrapper">
+			<div id="userNames">Users Connected:</div>
+			<div id="userChats">
+				<!-- All chats go here as they show up -->
+				Chat messages:
+			</div>
+
+			<div class="tool-bar">
+				<input type="color" id="color-picker" />
+				<label>Line Thickness</label>
+				<input type="number" id="thickness" placeholder="10" />
+			</div>
+
+			<canvas id="canvas" width="500px" height="500px"></canvas>
+
+			<div id="type-chat">
+				<form onsubmit="sendChatMessage()">
+					<input type="text" id="chat-message" placeholder="Enter your message here" />
+					<input class="btn btn-success" type="submit" value="Send" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+
+	<script type="text/javascript" src="scripts.js"></script>
+
+</body>
+</html>
